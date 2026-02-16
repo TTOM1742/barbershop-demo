@@ -1,0 +1,51 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 2px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    display: block;
+    padding: 1rem;
+    margin: 0 !important;
+}
+
+.btn-danger:hover {
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
+.hero {
+    height: 200px;
+    background: 
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url("{{ url_for('static', filename='banner.jpg') }}") center center/cover no-repeat;
+}
+
+.card:hover {
+  cursor: pointer;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+}
+
+.card {
+  width: 100%;
+  max-width: 500px;
+}
+
+.card img {
+  width: 100%;
+}

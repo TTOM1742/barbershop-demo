@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block title %}About Us | Elite Cuts Barbershop{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h2 class="text-center mb-4">About Us</h2>
+    <div class="row align-items-start">
+        <div class="col-md-6">
+            <img src="{{ url_for('static', filename='about.jpg') }}" class="img-fluid mb-3" width="600px" height="auto" alt="Front of Barbershop">
+        </div>
+        <div class="col-md-6">
+            <p class="text-center">Elite Cuts Barbershop has been serving the community with top-notch grooming services for over a decade. Our team of skilled barbers is dedicated to providing exceptional haircuts, shaves, and beard trims in a welcoming and professional environment. We pride ourselves on staying up-to-date with the latest trends and techniques to ensure our clients always leave looking their best.</p>
+            <div class="text-center">
+                <a href="/book" class="btn btn-danger">Book Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
